@@ -1,0 +1,1 @@
+print("Jest", 60*24*7*7, "minut w 7 tygodniach.")
