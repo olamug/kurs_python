@@ -1,0 +1,3 @@
+# 1
+print("Czy 23 + 3 będzie się równać 15 + 12 ?")
+print((23+3) == (12+13))
