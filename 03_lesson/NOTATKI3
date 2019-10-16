@@ -1,0 +1,47 @@
+my_arr.append("Sam") - dodawanie na koniec
+my_arr.insert(1,{miejsce}, "Sam") - dodawanie w pierwsze miejsce
+elem = my.arr. pop(1) - element jest zdjęty z pozycji nr 1 ale jest po elem.
+veggies.remove('kale') - całkowite usuwanie (podajemy dokładnie co)
+veggies = [coś tam, coś tam]
+del veggies[1]
+veggies -> już bez peirwszej pozycji
+list(range(10)) - zamienia elementy listowane, na elementy listy wymienione
+
+1. kopia listy - list.copy(), deepcopy() (shadow copy vs deepcopy znaleźć)
+2. posortowanie elementów na liście - list.sort(key=none, reverse=False)
+3. usunięcie wszystkich elem. - list.clear()
+4. policzy takie same elementy - list.count(x)
+5. zsumowanie liczb na liście
+
+lista 2 wymiarowa lista 3x3 - najpierw wiersz potem kolumny (macierz)
+współrzędne to list3x3[1][1] (czy list3x3 = [1][2])
+print(list3x3) wyśeitli na płasko wsyzstko po kolei wiersze
+
+for row in list 3x3
+    print row
+
+TUPLE - KROTKI
+krotka - prawie to samo jak lista, ale nie można zmieniać, jakby się chciało
+podmienić jakiś element,
+aby coś usunąć należy przekonwertować od listy: list = list(my tuple)
+
+my_tuple = ('a', 4.3, 77, 3j+4)
+tmp_list = list(my_tuple)
+tmp.list.remove(77)
+print(tmp_list)
+my_tuple = tuple(tmp_list)
+
+set - zestawy
+
+sety nie sa uporządkowane i mają tylko unikalne wartości.
+usuwamy tylko po wartości
+>>>>>>>>porównać sobie remove vs discard w pythonie - czym się różnią
+
+
+słowniki - dict
+tak jak sety ale przechowują i key i value nieuporządkowane
+my_dict = {
+'key' : 'value'
+}
+my_dict[5] = wartość 5
+
