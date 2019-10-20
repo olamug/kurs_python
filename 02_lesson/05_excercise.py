@@ -1,4 +1,4 @@
-print("Ustaw hasło składające się z cyfr i liter, o długości co najmniej 8 znaków i zawiera co najmniej 1 dużą literę.")
+print("Ustaw hasło składające się z cyfr i liter, o długości co najmniej 8 \nznaków i zawiera co najmniej 1 dużą literę.")
 password = input("Wprowadź swoje hasło: ")
 alphanum = password.isalnum()
 condition_1_upper = alphanum and password.islower()

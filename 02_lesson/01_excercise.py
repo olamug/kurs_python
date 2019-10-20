@@ -2,6 +2,6 @@
 print("Sprawdź, czy Twoja liczba jest podzielna przez 3 bez reszty!")
 num = int(input("Podaj liczbę: "))
 if num % 3 == 0:
-    print("Podzielna przez 3 bez reszty")
+    print("Twoja liczba jest podzielna przez 3.")
 else:
-    print("Nie podzielna bez reszty przez 3")
+    print("Twoja liczba nie jest podzielna przez 3.")
