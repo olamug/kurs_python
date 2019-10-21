@@ -1,8 +1,4 @@
-# zadanie 1
-list = ["namiot", "śpiwór", "termos", "kurtka", "zapałki"]
-print(list)
-print("Lista posortowana: \n", sorted(list))
-print()
+
 # zadanie 3
 list_num = input("Podaj listę liczb całkowitych: ")
 print("Sprawdzam, czy ostatni i pierwszy element jest taki sam: ")
@@ -11,7 +7,7 @@ print()
 #inna - lepsza wersja zadania 3
 counter = int(input("Ile lizb chcesz dodać?: "))
 elements = []
-for i in range(counter)
+for i in range(counter):
     e = input("poodaj dowolny ciąg znaków: ")
     elements.append(e)
 
