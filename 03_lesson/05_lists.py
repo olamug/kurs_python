@@ -1,6 +1,6 @@
 # zadanie 5
 people = [
-    ['imię', 'nazwisko', 'zawód'],
+    # ['imię', 'nazwisko', 'zawód'],
     ['Dorota', 'Wellman', 'dziennikarka'],
     ['Adam', 'Małysz', 'sportowiec'],
     ['Robert', 'Lewandowski', 'piłkarz'],
