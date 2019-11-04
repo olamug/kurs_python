@@ -17,34 +17,44 @@ def is_mastercard(is_card, number):
 def is_american_express(is_card, number):
     if not is_card:
         return False
-    if is_card and len(number == 15):
-        if number[0:2] in (34, 37):  # nie trzeba int bo porównujemy 2 stringi, 34 i 37 są w krotce czyli jest to niezmienne co jest w anwiazise
-
+    if is_card and len(number) == 15:
+        if int(number[0:2]) in (34, 37):  # nie trzeba int bo porównujemy 2 stringi, 34 i 37 są w krotce czyli jest to niezmienne co jest w anwiazise
             return True
 
 
 filename = 'all_cards.txt'
-with open(filename, )
+with open(filename, 'r') as f:
+    cards = f.readlines()
 
+card_numbers = []
+for card_number in cards:
+    card_number = card_numbers.append(card_number.strip())
 
-
-card_number = (input("Podaj numer karty: "))
+# card_number = (input("Podaj numer karty: "))
 can_be_card_number = False
 
-if len(card_number) < 13 or len(card_number) > 16:
-    print("Wrong number")
-else:
-    if card_number.isdecimal():
-        print("Can be card number")
-        can_be_card_number = True
+for card_number in card_numbers:
+    if len(card_number) < 13 or len(card_number) > 16:
+        print("Wrong number")
     else:
-        print("Not a number")
+        if card_number.isdecimal():
+            print("Can be card number")
+            can_be_card_number = True
+        else:
+            print("Not a number")
 
-if is_visa(can_be_card_number, card_number):
-    print("I'm Visa")
-elif is_mastercard(can_be_card_number, card_number):
-    print("I'm MasterCard")
-elif is_american_express(can_be_card_number, card_number):
-    print("I'm American Express")
-else:
-    print("Not known card type.")
+for card_number in card_numbers:
+    if is_visa(can_be_card_number, card_number):
+        print("I'm Visa")
+        with open('visa.txt', 'a') as v:
+            v.write(card_number+'\n')
+    elif is_mastercard(can_be_card_number, card_number):
+        print("I'm MasterCard")
+        with open('mastercard.txt', 'a') as m:
+            m.write(card_number+'\n')
+    elif is_american_express(can_be_card_number, card_number):
+        print("I'm American Express")
+        with open('americanexpress.txt', 'a') as a:
+            a.write(card_number+'\n')
+    else:
+        print("Not known card type.")
