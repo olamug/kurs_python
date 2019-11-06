@@ -1,23 +1,26 @@
-print("Body Mass Index - BMI calculator")
-print()
-
 def bmi_calculator(weight, height):
-    return round((weight / height**2), 2)
+    return round(weight/(height ** 2), 3)
 
 
 def bmi_status(bmi):
-    if bmi < 18.49:
-        print('Your BMI is:', bmi, "- underweight.")
-    elif bmi < 24.99:
-        print('Your BMI is:', bmi, "- normal (healthy) weight.")
-    elif bmi < 29.99:
-        print('Your BMI is:', bmi, "- overweight.")
+    if bmi < 16:
+        return "severely_underweight"
+    elif bmi < 18.5:
+        return "underweight"
+    elif bmi < 25:
+        return "healthy"
+    elif bmi < 30:
+        return "overweight"
     else:
-        print('Your BMI is:', bmi, "- obesity.")
+        return "severely_overweight"
+
 
 def main():
-    result = bmi_calculator(56, 1.6)
-    bmi_status(result)
+    print("***************")
+    result = bmi_calculator(56, 1.75)
+    print(bmi_status(result))
+    print("***************")
+
 
 if __name__ == "__main__":
     main()

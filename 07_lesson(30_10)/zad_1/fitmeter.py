@@ -1,12 +1,20 @@
 import bmi
 
 
+def advice(filename):
+    with open(filename + ".txt") as f:
+        content = f.read()
+
+    print(content)
+
+
 def main():
-    w = float(input("How much do you weight? "))
-    h = float(input("How tall are you? (Height in meters) "))
+    w = float(input("Give me your weight [kg]: "))
+    h = float(input("Give me your height [m]: "))
     bmi_result = bmi.bmi_calculator(w, h)
-    bmi_status = bmi.bmi_status()
-    print(bmi.bmi_calculator(60, 1.8))
+    bmi_stan = bmi.bmi_status(bmi_result)
+    print("BMI status:", bmi_stan)
+    advice(bmi_stan)
 
 
 if __name__ == '__main__':

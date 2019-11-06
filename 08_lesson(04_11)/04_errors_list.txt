@@ -1,0 +1,4 @@
+moje błędy
+could not convert string to float: 'hahahahaha'
+could not convert string to float: ' kolejnybłąd'
+could not convert string to float: ' 238fwuenks.vd'
