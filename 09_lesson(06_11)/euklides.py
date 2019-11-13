@@ -5,7 +5,7 @@ def nwd(a, b):
         return nwd(b, a % b)
 
 
-def nww(a, b):
+def nwd2(a, b):
     while b != 0:
         c = a%b
         a = b
@@ -18,4 +18,4 @@ b = 48
 
 print(nwd(a, b))
 print("**********")
-print(nww(a, b))
+print(nwd2(a, b))
