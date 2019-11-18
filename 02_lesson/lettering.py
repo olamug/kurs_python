@@ -2,6 +2,6 @@
 txt = str(input("podaj słowo: "))
 for letter in txt:
     print("-", letter)
-names = ["Ada"]
-for step in range (3):
-    print(step + ":" + names[step])
+names = ["Ada", "Julia", "Ruby"]
+for e in range(len(names)):
+    print("id:", e, "name:", names[e])

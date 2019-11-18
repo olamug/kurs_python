@@ -5,5 +5,3 @@ for liczba in range (1, 15):
         print(suma)
     else:
         print(suma, end=", ")
-
-print(liczba)
