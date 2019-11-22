@@ -2,7 +2,7 @@ txt = 'panorama'
 set_txt = set(txt)
 print(set_txt)
 
-# discard nie wyrzuci błędu jeśli wskażę do usunięcia elementu nieistniejącego w secie.
+# discard nie wyrzuci błędu jeśli wskażę do usunięcia element nieistniejący w secie.
 
 set_txt.discard('l')
 print(set_txt)

@@ -1,6 +1,7 @@
 
 # zadanie 3
 list_num = input("Podaj listę liczb całkowitych: ")
+list_num = list_num.split(' ')
 print("Sprawdzam, czy ostatni i pierwszy element jest taki sam: ")
 print(list_num[0] == list_num[-1])
 print()
@@ -14,9 +15,9 @@ for i in range(counter):
 print(elements)
 print("czy pierwszy i osattni są takie sam:", elements[0] == elements[-1])
 if elements[0] == elements[-1]:
-    print("pierwszy i osattni są takie smae")
+    print("Pierwszy i ostatni element jest taki sam.")
 else:
-    print("elementy nie są takie same")
+    print("Pierwszy i ostatni element nie jest taki sam.")
 
 #jeszcze inny sposó
 elements2 = []
@@ -36,3 +37,7 @@ while True:
         break
     num_arr.append(e)
 print(num_arr)
+if num_arr[0] == num_arr[-1]:
+    print("Pierwszy i ostatni element jest taki sam.")
+else:
+    print("Pierwszy i ostatni element nie jest taki sam.")

@@ -24,25 +24,25 @@ for row in range(len(people)):
 print()
 print("--------------------------------------------------")
 print()
-# #inaczej wersja hard
-# for row in range(len(people)):
-#     for col in range(len(people[row])):
-#         if col == 1:
-#             print(people[row][col], end = ' - ')
-#         else:
-#             print(people[row][col], end = ' - ')
-#     print()
-# print()
-# print("--------------------------------------------------")
-# print()
-# #jeszcze gorzej
-# for row in range(len(people)):
-#     # print()
-#     for col in range(len(people[row])):
-#         if col == 1:
-#             print(people[row][col], end = ' - ')
-#         elif col == 2:
-#             print(people[row][col], end = ' * ')
-#         else:
-#             print(people[row][col], end = ' - ')
-#     print() #można dodać go po pierwszym for (przed drugim)
+# inaczej wersja hard
+for row in range(len(people)):
+    for col in range(len(people[row])):
+        if col == 1:
+            print(people[row][col], end = ' - ')
+        else:
+            print(people[row][col], end = ' - ')
+    print()
+print()
+print("--------------------------------------------------")
+print()
+# modyfikacja znaków oddzielających
+for row in range(len(people)):
+    # print()
+    for col in range(len(people[row])):
+        if col == 0:
+            print(people[row][col], end=' ')
+        elif col == 1:
+            print(people[row][col], end = ' * ')
+        else:
+            print(people[row][col], end = '')
+    print()

@@ -1,3 +1,4 @@
+# Policz elementy na liœcie, dopóki element nie bêdzie krotk¹.
 my_tuple = ('a', 4.3, 77, 3j+4)
 tmp_list = list(my_tuple)
 tmp_list.remove(77)
